@@ -11,7 +11,7 @@ const exp = require('constants');
 jest.mock('./newsModel');
 jest.mock('./newsClient');
 
-describe('Notes view', () => {
+describe('NewsView', () => {
   beforeEach(() => {
     document.body.innerHTML = fs.readFileSync('../index.html');
     NewsClient.mockClear();
