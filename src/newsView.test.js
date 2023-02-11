@@ -68,11 +68,7 @@ describe('NewsView', () => {
     mockModel.getNews.mockImplementation(() => mockData);
 
     const view = new NewsView(mockModel, mockClient);
-    const searchInputEl = document.querySelector('#search-input');
-    searchInputEl.value = 'test';
-
-    const searchBtnEl = document.querySelector('#search-btn');
-    searchBtnEl.click();
+    z;
 
     expect(mockClient.loadNews).toHaveBeenCalledTimes(1);
     // expect(mockModel.setNews).toHaveBeenCalledWith(mockData);

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild ./src/index.js --bundle  --outfile=bundle.js --watch"
+    "build": "esbuild ./src/index.js --bundle  --outfile=bundle.js --watch --platform=node"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/henrow5/news-summary-challenge#readme",
   "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
     "jest-environment-jsdom": "^29.3.1",
     "jest-fetch-mock": "^3.0.3"
   }
